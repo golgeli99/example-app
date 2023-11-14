@@ -8,21 +8,18 @@
     <a href="/ilaneklefrm" class="btn btn-primary">İlan Ekle</a>
 </div>
 
-<form method="POST" action="{{url('/ilanekle')}}">
+<form method="POST" action="{{url('/ilanara')}}">
     @csrf
     <div class="form-group">
         <label for="baslik">baslik</label>
-        <input type="text" name="baslik" id="baslik" class="form-control" required>
+        <input type="text" name="baslik" id="baslik" class="form-control">
     </div>
     <div class="form-group">
-        <label for="aciklama">aciklama</label>
-        <textarea name="aciklama" id="aciklama" class="form-control" required></textarea>
+        <label for="id">id</label>
+        <textarea name="id" id="id" class="form-control" ></textarea>
     </div>
-    <div class="form-group">
-        <label for="fiyat">fiyat</label>
-        <input type="number" step="0.01" name="fiyat" id="fiyat" class="form-control" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Create</button>
+   
+    <button type="submit" class="btn btn-primary">ARA</button>
 </form>
 
 <table class="table">
